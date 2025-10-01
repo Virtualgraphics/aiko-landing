@@ -23,9 +23,9 @@ import { Github, X, Linkedin } from "lucide-react";
 export default function Home() {
   return (
 
-<div className="w-full h-full justify-center mx-auto pt-12 sm:px-8 md:px-12 space-y-2  bg-background">
+<div className="w-full h-full justify-center mx-auto space-y-2  bg-background">
 
-<div className="max-w-8xl ">
+<div className="max-w-8xl pt-12 px-12">
 <div className=" sm:w-1/2 sm:h-1/2 md:w-1/2 md:h-1/2 lg:w-1/4 lg:h-1/4 flex mx-auto p-4">
  <Image
         
