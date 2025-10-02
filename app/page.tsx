@@ -7,7 +7,7 @@ import { Github, X, Linkedin } from "lucide-react";
     const images = [
         { src: "/assets/carousel_casual.jpg", alt: "Image 1" },
         { src: "/assets/carousel_fantasy.jpg", alt: "Image 2" },
-        { src: "/assets/carousel_urban.jpg", alt: "Image 3" },
+        { src: "/assets/carousel_urban02.jpg", alt: "Image 3" },
         { src: "/assets/carousel_goth.jpg", alt: "Image 4" },
         { src: "/assets/carousel_exotic.jpg", alt: "Image 5" },
         { src: "/assets/carousel_business02.jpg", alt: "Image 6" },

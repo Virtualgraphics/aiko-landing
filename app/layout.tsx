@@ -3,6 +3,7 @@ import { Quantico, Roboto } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
+
 const quantico = Quantico({ 
   weight: ['400', '700'],
   subsets: ['latin'],
@@ -26,11 +27,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-        <body className={`${quantico.variable} ${roboto.variable} font-sans`}>
-      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem storageKey="aiko-theme">
-        {children}</ThemeProvider>
-      </body>
-    </html>
-  );
+        <html lang="en" suppressHydrationWarning>
+            <body className={`${quantico.variable} ${roboto.variable} font-sans`}>
+    	
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem storageKey="aiko-theme">
+            {children}</ThemeProvider>
+          
+    		
+    	</body>
+        </html>
+      )
 }
