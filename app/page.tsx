@@ -79,7 +79,7 @@ COMING IN OCTOBER
 <div className="flex mx-auto justify-center px-8 pb-12">
 <Carousel>
   <CarouselContent>
-   <CarouselItem className="basis-1/4"> 
+   <CarouselItem className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4"> 
    <Image 
           src="/assets/companion_aglaya.jpg" 
           alt="Aglaya"
@@ -88,7 +88,7 @@ COMING IN OCTOBER
           className="rounded-lg"
         />
         </CarouselItem>
-    <CarouselItem className="basis-1/4">
+    <CarouselItem className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4"> 
      <Image 
          
           src="/assets/companion_dorian.jpg"
@@ -99,7 +99,7 @@ COMING IN OCTOBER
         />
     </CarouselItem>
 
-    <CarouselItem className="basis-1/4">
+    <CarouselItem className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4"> 
      <Image 
           src="/assets/companion_junko.jpg"
           alt="Aglaya"
@@ -109,7 +109,7 @@ COMING IN OCTOBER
         />
          </CarouselItem>
 
-          <CarouselItem className="basis-1/4">
+          <CarouselItem className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4"> 
      <Image 
           src="/assets/companion_mashai.jpg"
           alt="Aglaya"
@@ -119,7 +119,7 @@ COMING IN OCTOBER
         />
     </CarouselItem>
 
-    <CarouselItem className="basis-1/4">
+    <CarouselItem className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4"> 
      <Image 
           src="/assets/companion_kenji.jpg"
           alt="Aglaya"
