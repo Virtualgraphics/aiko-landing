@@ -2,6 +2,13 @@ import Image from "next/image";
 import { CardCarousel } from "@/components/card-carousel"
 import SocialLinks from "@/components/social-links";
 import { Github, X, Linkedin } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 
     const images = [
@@ -64,10 +71,70 @@ More than a chat, an autonomous companion
  
 
     <div className="flex w-full mx-auto justify-center">
-      <h1 className="sm:text-2xl md:text-3xl lg:text-3xl pt-4 pb-24 font-semibold font-display text-center text-muted-foreground">
+      <h1 className="sm:text-2xl md:text-3xl lg:text-3xl py-8 font-semibold font-display text-center text-muted-foreground">
 COMING IN OCTOBER
 </h1> 
 </div>
+
+<div className="flex mx-auto justify-center px-8 pb-12">
+<Carousel>
+  <CarouselContent>
+   <CarouselItem className="basis-1/4"> 
+   <Image 
+          src="/assets/companion_aglaya.jpg" 
+          alt="Aglaya"
+          width={300}
+          height={300}
+          className="rounded-lg"
+        />
+        </CarouselItem>
+    <CarouselItem className="basis-1/4">
+     <Image 
+         
+          src="/assets/companion_dorian.jpg"
+          alt="Dorian"
+          width={300}
+          height={300}
+          className="rounded-lg"
+        />
+    </CarouselItem>
+
+    <CarouselItem className="basis-1/4">
+     <Image 
+          src="/assets/companion_junko.jpg"
+          alt="Aglaya"
+          width={300}
+          height={300}
+          className="rounded-lg"
+        />
+         </CarouselItem>
+
+          <CarouselItem className="basis-1/4">
+     <Image 
+          src="/assets/companion_mashai.jpg"
+          alt="Aglaya"
+          width={300}
+          height={300}
+          className="rounded-lg"
+        />
+    </CarouselItem>
+
+    <CarouselItem className="basis-1/4">
+     <Image 
+          src="/assets/companion_kenji.jpg"
+          alt="Aglaya"
+          width={300}
+          height={300}
+          className="rounded-lg"
+        />
+    </CarouselItem>
+
+  </CarouselContent>
+  <CarouselPrevious />
+  <CarouselNext />
+</Carousel>
+</div>
+
 </div>
 
 
