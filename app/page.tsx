@@ -1,3 +1,6 @@
+
+"use client"
+
 import Image from "next/image";
 import { CardCarousel } from "@/components/card-carousel"
 import SocialLinks from "@/components/social-links";
@@ -9,6 +12,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 
 
     const images = [
@@ -30,6 +35,10 @@ import {
 ];
 
 export default function Home() {
+  const plugin = useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
+
   return (
 
 <div className="w-full h-full justify-center mx-auto space-y-2  bg-background">
@@ -77,7 +86,13 @@ COMING IN OCTOBER
 </div>
 
 <div className="flex mx-auto justify-center px-8 pb-12">
-<Carousel>
+
+<Carousel plugins={[plugin.current]}
+ 
+   opts={{
+  loop: true,
+  align: "start", // or "center" or "end"
+}}>
   <CarouselContent>
    <CarouselItem className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4"> 
    <Image 
